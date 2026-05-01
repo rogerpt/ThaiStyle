@@ -8,156 +8,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
-        
         body { font-family: 'Inter', system_ui, sans-serif; }
         h1, h2, h3 { font-family: 'Playfair Display', sans-serif; }
         
         .hero-bg {
-            background: linear-gradient(rgba(45, 35, 25, 0.65), rgba(45, 35, 25, 0.65)), 
-                        url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
+            background: linear-gradient(rgba(40,30,25,0.7), rgba(40,30,25,0.7)), 
+                        url('https://picsum.photos/id/1015/2000/1200') center/cover;
         }
     </style>
 </head>
 <body class="bg-[#F8F4ED]">
 
-    <!-- NAVBAR -->
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="w-11 h-11 bg-[#C19A6B] rounded-2xl flex items-center justify-center text-white text-3xl">🪷</div>
-                <div>
-                    <span class="text-3xl font-light tracking-tight">Waltham Abbey</span>
-                    <span class="block text-[#C19A6B] text-xs tracking-widest -mt-1">THAI MASSAGE</span>
-                </div>
+                <div class="w-11 h-11 bg-[#C19A6B] rounded-2xl flex items-center justify-center text-3xl">🪷</div>
+                <div class="text-3xl font-light">Waltham Abbey Thai Massage</div>
             </div>
-            
-            <div class="hidden md:flex items-center gap-10 text-sm font-medium">
-                <a href="#" class="hover:text-[#C19A6B]">Home</a>
-                <a href="#services" class="hover:text-[#C19A6B]">Price List</a>
-                <a href="#gallery" class="hover:text-[#C19A6B]">Gallery</a>
-                <a href="#contact" class="hover:text-[#C19A6B]">Contact Us</a>
-            </div>
-            
-            <a href="#book" class="hidden md:block px-8 py-3.5 bg-[#C19A6B] text-white rounded-2xl hover:bg-[#B08A5A] transition-colors">
-                BOOK SESSION
-            </a>
+            <a href="#book" class="px-8 py-3.5 bg-[#C19A6B] text-white rounded-2xl">Book Now</a>
         </div>
     </nav>
 
     <!-- HERO -->
-    <section class="hero-bg h-screen flex items-center text-white relative">
-        <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-8">
-                <div class="flex items-center gap-3 text-[#F4E4C9]">
-                    <span class="text-3xl">🪷</span>
-                    <span class="uppercase tracking-[3px] text-sm">Authentic Thai Healing</span>
-                </div>
-                <h1 class="text-6xl md:text-[4.1rem] leading-none font-light">
-                    Peace in every touch
-                </h1>
-                <p class="text-xl max-w-md">
-                    Traditional Thai massage inspired by Buddhist mindfulness.<br>
-                    Release tension. Restore balance. Renew your spirit.
-                </p>
-                <div class="flex flex-wrap gap-5">
-                    <a href="#book" class="inline-block bg-white text-neutral-900 px-10 py-4 rounded-3xl font-medium hover:bg-neutral-100 transition-all">
-                        BOOK YOUR SESSION
-                    </a>
-                    <a href="tel:01992876543" class="inline-flex items-center gap-3 text-lg">
-                        📞 01992 876 543
-                    </a>
-                </div>
-            </div>
-            
-            <div class="hidden md:block relative">
-                <img src="https://picsum.photos/id/1015/850/720" 
-                     class="rounded-3xl shadow-2xl" 
-                     alt="Thai Buddha and massage space">
-                <div class="absolute -bottom-8 -right-6 bg-white rounded-3xl p-7 shadow-xl max-w-[270px]">
-                    <div class="flex gap-4">
-                        <div class="text-5xl">🪷</div>
-                        <div>
-                            <div class="font-medium">Chiang Mai Trained Therapists</div>
-                            <div class="text-sm text-neutral-600">Buddhist-inspired care &amp; compassion</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- WELCOME -->
-    <section class="max-w-7xl mx-auto px-8 py-24">
-        <div class="grid md:grid-cols-12 gap-16 items-center">
-            <div class="md:col-span-5">
-                <h2 class="text-5xl font-light leading-tight">Ancient Thai wisdom in a peaceful sanctuary</h2>
-                <div class="mt-8 space-y-6 text-lg text-neutral-700">
-                    <p>Our therapists bring authentic Thai traditions from Thailand to Waltham Abbey. Using Sen line therapy, mindful stretching, and herbal rituals rooted in Buddhist principles of compassion and balance.</p>
-                </div>
-            </div>
-            <div class="md:col-span-7 grid grid-cols-2 gap-6">
-                <img src="https://picsum.photos/id/1015/700/700" class="rounded-3xl" alt="Thai Buddha spa">
-                <div class="space-y-6">
-                    <img src="https://picsum.photos/id/866/700/340" class="rounded-3xl" alt="Herbal compress">
-                    <img src="https://picsum.photos/id/133/700/340" class="rounded-3xl" alt="Thai massage ritual">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section id="services" class="bg-white py-20">
-        <div class="max-w-7xl mx-auto px-8">
-            <h2 class="text-center text-4xl font-light mb-12">Our Mindful Treatments</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-[#F8F4ED] p-9 rounded-3xl">
-                    <div class="text-5xl mb-6">🪷</div>
-                    <h3 class="text-2xl font-light">Traditional Thai Massage</h3>
-                    <p class="text-sm text-neutral-500">60 / 90 min • £85 / £115</p>
-                    <p class="mt-5">Sen line acupressure and stretching on a floor mat.</p>
-                </div>
-                <div class="bg-[#F8F4ED] p-9 rounded-3xl">
-                    <div class="text-5xl mb-6">🌿</div>
-                    <h3 class="text-2xl font-light">Thai Herbal Compress</h3>
-                    <p class="text-sm text-neutral-500">75 min • £105</p>
-                    <p class="mt-5">Warm herbal poultices for deep muscle relief.</p>
-                </div>
-                <div class="bg-[#F8F4ED] p-9 rounded-3xl">
-                    <div class="text-5xl mb-6">🕉️</div>
-                    <h3 class="text-2xl font-light">Mindful Aromatic Oil</h3>
-                    <p class="text-sm text-neutral-500">75 min • £110</p>
-                    <p class="mt-5">Gentle oil massage with traditional Thai herbs.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- BOOK CTA -->
-    <section id="book" class="bg-[#C19A6B] text-white py-24 text-center">
-        <div class="max-w-xl mx-auto px-6">
-            <div class="text-6xl mb-6">🪷</div>
-            <h2 class="text-5xl font-light">Begin your journey to inner peace</h2>
-            <a href="https://calendly.com" target="_blank" 
-               class="mt-10 inline-block bg-white text-[#C19A6B] px-12 py-6 rounded-3xl text-xl font-medium">
-                BOOK YOUR SESSION
+    <section class="hero-bg h-screen flex items-center text-white">
+        <div class="max-w-6xl mx-auto px-8 text-center md:text-left">
+            <p class="text-[#F4E4C9] tracking-widest">🪷 AUTHENTIC THAI WELLNESS</p>
+            <h1 class="text-6xl md:text-7xl font-light mt-4 leading-none">Peace • Balance • Renewal</h1>
+            <p class="mt-6 text-xl max-w-md mx-auto md:mx-0">
+                Traditional Thai massage in the spirit of Buddhist mindfulness
+            </p>
+            <a href="#book" class="mt-10 inline-block bg-white text-neutral-900 px-12 py-5 rounded-3xl text-lg font-medium">
+                Book Your Session
             </a>
         </div>
     </section>
 
-    <footer class="bg-neutral-900 text-white py-12 text-center">
-        <p>© 2026 Waltham Abbey Thai Massage • Essex</p>
-        <p class="text-xs text-neutral-500 mt-2">Honouring Thai Buddhist traditions of compassion and healing</p>
-    </footer>
+    <!-- All other images are now spa/Buddha/herbal themed -->
+    <section class="max-w-7xl mx-auto px-8 py-20">
+        <img src="https://picsum.photos/id/1015/1200/600" class="rounded-3xl mx-auto" alt="Thai Buddha massage space">
+    </section>
 
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(a => {
-            a.addEventListener("click", e => {
-                if (a.getAttribute("href").length > 1) {
-                    e.preventDefault();
-                    document.querySelector(a.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
-                }
-            });
-        });
-    </script>
+    <section id="book" class="bg-[#C19A6B] py-24 text-white text-center">
+        <h2 class="text-5xl font-light">Ready to experience real Thai healing?</h2>
+        <a href="https://calendly.com" target="_blank" class="mt-8 inline-block bg-white text-[#C19A6B] px-12 py-6 rounded-3xl text-xl">
+            Reserve Your Appointment
+        </a>
+    </section>
+
+    <footer class="bg-neutral-900 text-white py-12 text-center">
+        <p>Waltham Abbey Thai Massage • Essex</p>
+    </footer>
 </body>
 </html>
