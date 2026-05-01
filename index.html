@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waltham Abbey Thai Massage</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
-        
         body { font-family: 'Inter', system_ui, sans-serif; }
         h1, h2, h3 { font-family: 'Playfair Display', sans-serif; }
     </style>
@@ -20,7 +20,7 @@
             <div class="flex items-center gap-3">
                 <div class="w-11 h-11 bg-[#C19A6B] rounded-2xl flex items-center justify-center text-white text-3xl">🪷</div>
                 <div>
-                    <span class="text-3xl font-light">Waltham Abbey</span>
+                    <span class="text-3xl font-light tracking-tight">Waltham Abbey</span>
                     <span class="block text-[#C19A6B] text-xs tracking-widest -mt-1">THAI MASSAGE</span>
                 </div>
             </div>
@@ -30,41 +30,79 @@
 
     <!-- HERO with your Buddha image -->
     <section class="relative h-screen flex items-center text-white">
-        <img src="buddha.jpg" 
-             class="absolute inset-0 w-full h-full object-cover" 
-             alt="Serene Buddha Statue">
-        <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div>
+        <img src="buddha.jpg" class="absolute inset-0 w-full h-full object-cover" alt="Serene Buddha Statue">
+        <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
         
         <div class="relative z-10 max-w-7xl mx-auto px-8">
             <div class="max-w-xl">
-                <p class="flex items-center gap-2 text-[#F4E4C9] text-sm tracking-widest">
+                <p class="flex items-center gap-2 text-[#F4E4C9] text-sm tracking-widest mb-2">
                     <span class="text-xl">🪷</span> BUDDHIST-INSPIRED HEALING
                 </p>
-                <h1 class="text-6xl md:text-7xl font-light mt-4 leading-none">Peace in every touch</h1>
+                <h1 class="text-6xl md:text-7xl font-light leading-none">Peace in every touch</h1>
                 <p class="mt-6 text-xl">Authentic Thai massage rooted in mindfulness and compassion.</p>
                 
-                <a href="#book" class="mt-10 inline-block bg-white text-neutral-900 px-10 py-4 rounded-3xl text-lg font-medium hover:bg-neutral-100">
+                <a href="#book" class="mt-10 inline-block bg-white text-neutral-900 px-12 py-5 rounded-3xl text-lg font-medium hover:bg-neutral-100">
                     Book Your Session
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Simple content area -->
-    <section class="py-20 text-center">
-        <img src="buddha.jpg" class="mx-auto rounded-3xl shadow-2xl max-h-[500px] object-cover" alt="Buddha Statue">
+    <!-- SERVICES / PRICING -->
+    <section id="services" class="max-w-7xl mx-auto px-8 py-20">
+        <h2 class="text-center text-4xl font-light mb-4">Our Traditional Treatments</h2>
+        <p class="text-center text-neutral-500 mb-12">All sessions are performed with care and mindfulness</p>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-3xl shadow-sm">
+                <div class="text-4xl mb-6">🪷</div>
+                <h3 class="text-2xl font-light">Traditional Thai Massage</h3>
+                <p class="text-sm text-neutral-500 mt-1">60 minutes — £85<br>90 minutes — £115</p>
+                <p class="mt-6 text-neutral-600">Sen line acupressure, stretching and rhythmic compression on a floor mat.</p>
+            </div>
+            
+            <div class="bg-white p-8 rounded-3xl shadow-sm">
+                <div class="text-4xl mb-6">🌿</div>
+                <h3 class="text-2xl font-light">Thai Herbal Compress</h3>
+                <p class="text-sm text-neutral-500 mt-1">75 minutes — £105</p>
+                <p class="mt-6 text-neutral-600">Warm herbal balls (Luk Pra Kob) to relieve deep muscle tension and improve circulation.</p>
+            </div>
+            
+            <div class="bg-white p-8 rounded-3xl shadow-sm">
+                <div class="text-4xl mb-6">🕉️</div>
+                <h3 class="text-2xl font-light">Mindful Aromatic Oil Massage</h3>
+                <p class="text-sm text-neutral-500 mt-1">75 minutes — £110</p>
+                <p class="mt-6 text-neutral-600">Soothing full-body massage with traditional Thai herbal oils.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Booking -->
+    <!-- BOOKING CTA -->
     <section id="book" class="bg-[#C19A6B] py-24 text-white text-center">
-        <h2 class="text-5xl font-light">Begin your healing journey</h2>
-        <a href="https://calendly.com" target="_blank" class="mt-10 inline-block bg-white text-[#C19A6B] px-14 py-6 rounded-3xl text-xl font-medium">
-            Book Appointment
-        </a>
+        <div class="max-w-2xl mx-auto px-6">
+            <div class="text-6xl mb-6">🪷</div>
+            <h2 class="text-5xl font-light">Ready to experience deep peace?</h2>
+            <a href="https://calendly.com" target="_blank" 
+               class="mt-10 inline-block bg-white text-[#C19A6B] px-14 py-6 rounded-3xl text-xl font-medium">
+                Book Your Appointment
+            </a>
+        </div>
     </section>
 
     <footer class="bg-neutral-900 text-white py-12 text-center">
         <p>© 2026 Waltham Abbey Thai Massage • Essex</p>
+        <p class="text-xs text-neutral-500 mt-2">Honouring Thai Buddhist traditions of compassion and healing</p>
     </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function(e) {
+                if (this.getAttribute("href").length > 1) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
