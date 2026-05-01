@@ -17,8 +17,9 @@
         }
         
         .hero-bg {
-            background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
-                        url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
+            background: linear-gradient(rgba(60, 40, 20, 0.45), rgba(60, 40, 20, 0.45)), 
+                        url('https://picsum.photos/id/866/2000/1200') center/cover no-repeat;
+            /* Changed to warm spa product shot */
         }
     </style>
 </head>
@@ -48,8 +49,8 @@
         </div>
     </nav>
 
-    <!-- HERO -->
-    <section class="hero-bg h-screen flex items-center text-white">
+    <!-- HERO - Now more like the screenshot -->
+    <section class="hero-bg h-screen flex items-center text-white relative">
         <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-12 items-center">
             <div class="space-y-6">
                 <h1 class="text-6xl md:text-7xl leading-none font-light">
@@ -71,17 +72,17 @@
                 </div>
             </div>
             
-            <!-- Right side image style -->
+            <!-- Right side - Spa product style like screenshot -->
             <div class="hidden md:block relative">
-                <img src="https://picsum.photos/id/1015/800/700" 
+                <img src="https://picsum.photos/id/866/800/700" 
                      class="rounded-3xl shadow-2xl" 
-                     alt="Thai Massage Elements">
-                <div class="absolute -bottom-6 -right-6 bg-white rounded-3xl p-6 shadow-xl max-w-[220px]">
+                     alt="Thai Massage Elements - Towels, oils, herbs">
+                <div class="absolute -bottom-8 -right-6 bg-white rounded-3xl p-6 shadow-xl max-w-[240px]">
                     <div class="flex gap-4 items-center">
-                        <div class="text-[#C19A6B] text-4xl">🌸</div>
+                        <div class="text-[#C19A6B] text-5xl">🌿</div>
                         <div>
-                            <div class="font-medium">Traditional Thai Healing</div>
-                            <div class="text-sm text-neutral-600">Chiang Mai trained therapists</div>
+                            <div class="font-medium text-neutral-800">Authentic Thai Experience</div>
+                            <div class="text-sm text-neutral-600">Herbal • Traditional • Healing</div>
                         </div>
                     </div>
                 </div>
@@ -89,35 +90,32 @@
         </div>
     </section>
 
-    <!-- WELCOME / ABOUT -->
+    <!-- WELCOME -->
     <section class="max-w-7xl mx-auto px-8 py-20">
         <div class="grid md:grid-cols-12 gap-12 items-center">
             <div class="md:col-span-5">
                 <h2 class="text-4xl font-light mb-6">Welcome to Waltham Abbey Thai Massage</h2>
                 <p class="text-neutral-700 leading-relaxed">
-                    We offer authentic Thai massage in a peaceful, contemporary setting. 
-                    Our highly trained therapists use traditional techniques to release tension, 
-                    improve circulation, and restore your natural energy balance.
+                    We bring the ancient healing art of Thai massage to Essex. 
+                    Our experienced therapists, trained in Thailand, use traditional techniques 
+                    including Sen line pressure, stretching, and herbal therapies.
                 </p>
                 <p class="mt-6 text-neutral-700 leading-relaxed">
-                    From classic Thai massage to herbal compress therapy and aromatic oil treatments — 
-                    each session is tailored to your needs.
+                    Every session is designed to release deep tension, improve circulation, 
+                    and leave you feeling re-energised and balanced.
                 </p>
-                <a href="#services" class="inline-block mt-8 text-[#C19A6B] font-medium hover:underline">
-                    View our full price list →
-                </a>
             </div>
             
             <div class="md:col-span-7 grid grid-cols-2 gap-6">
                 <div class="rounded-3xl overflow-hidden">
-                    <img src="https://picsum.photos/id/133/600/500" class="w-full" alt="Massage">
+                    <img src="https://picsum.photos/id/866/600/500" class="w-full h-full object-cover" alt="Spa setup">
                 </div>
                 <div class="space-y-6">
                     <div class="rounded-3xl overflow-hidden">
-                        <img src="https://picsum.photos/id/201/600/250" class="w-full" alt="Herbs">
+                        <img src="https://picsum.photos/id/1015/600/250" class="w-full" alt="Massage oils and herbs">
                     </div>
                     <div class="rounded-3xl overflow-hidden">
-                        <img src="https://picsum.photos/id/251/600/250" class="w-full" alt="Spa setting">
+                        <img src="https://picsum.photos/id/133/600/250" class="w-full" alt="Thai massage elements">
                     </div>
                 </div>
             </div>
@@ -132,17 +130,17 @@
                 <div class="bg-[#F8F4ED] p-8 rounded-3xl">
                     <h3 class="text-2xl font-light">Traditional Thai Massage</h3>
                     <p class="text-sm text-neutral-500 mt-1">60 / 90 minutes • £85 / £115</p>
-                    <p class="mt-4 text-neutral-600">Deep stretching, acupressure and rhythmic movements on a floor mat to release tension and improve flexibility.</p>
+                    <p class="mt-4 text-neutral-600">Full body treatment on a floor mat using stretching, acupressure and rhythmic techniques.</p>
                 </div>
                 <div class="bg-[#F8F4ED] p-8 rounded-3xl">
                     <h3 class="text-2xl font-light">Thai Herbal Compress</h3>
                     <p class="text-sm text-neutral-500 mt-1">75 minutes • £105</p>
-                    <p class="mt-4 text-neutral-600">Warm herbal balls pressed along the body to ease muscle pain and promote deep relaxation.</p>
+                    <p class="mt-4 text-neutral-600">Warm herbal balls pressed on the body to relieve muscle pain and improve circulation.</p>
                 </div>
                 <div class="bg-[#F8F4ED] p-8 rounded-3xl">
                     <h3 class="text-2xl font-light">Aromatic Oil Massage</h3>
                     <p class="text-sm text-neutral-500 mt-1">75 minutes • £110</p>
-                    <p class="mt-4 text-neutral-600">Soothing full-body massage with warm Thai herbal oils chosen specifically for you.</p>
+                    <p class="mt-4 text-neutral-600">Relaxing massage with warm Thai herbal oils for deep nourishment and calm.</p>
                 </div>
             </div>
         </div>
@@ -168,7 +166,6 @@
     </footer>
 
     <script>
-        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener("click", function(e) {
                 if (this.getAttribute("href").length > 1) {
