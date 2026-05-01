@@ -3,15 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAWAN — Thai Massage & Wellness</title>
+    <title>Waltham Abbey Thai Massage | Authentic Thai Healing</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
-        
-        :root {
-            --sage: #8A9A7B;
-        }
         
         body {
             font-family: 'Inter', system_ui, sans-serif;
@@ -22,7 +18,8 @@
         }
         
         .hero-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('https://picsum.photos/id/1015/2000/1200');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                             url('https://picsum.photos/id/1015/2000/1200');
             background-size: cover;
             background-position: center;
         }
@@ -32,7 +29,7 @@
         }
         
         .nav-link:hover {
-            color: #8A9A7B;
+            color: #9C7A5B;
             transform: translateY(-2px);
         }
         
@@ -45,40 +42,46 @@
             box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.15);
         }
         
-        .scroll-progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 3px;
-            background: #8A9A7B;
-            z-index: 50;
+        .lotus {
+            position: relative;
+        }
+        
+        .lotus::after {
+            content: '🌸';
+            position: absolute;
+            font-size: 180px;
+            opacity: 0.05;
+            top: -80px;
+            right: -60px;
+            z-index: -1;
         }
     </style>
 </head>
 <body class="bg-[#F8F5F1] text-neutral-800 overflow-x-hidden">
     <!-- Progress Bar -->
-    <div id="progress-bar" class="scroll-progress w-0"></div>
+    <div id="progress-bar" class="scroll-progress w-0 bg-[#9C7A5B]"></div>
 
     <!-- Navbar -->
     <nav class="bg-white border-b border-neutral-200 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="w-9 h-9 bg-[#8A9A7B] rounded-full flex items-center justify-center text-white text-xl">🌿</div>
+                <div class="w-10 h-10 bg-[#9C7A5B] rounded-2xl flex items-center justify-center text-white text-2xl">🌿</div>
                 <div>
-                    <span class="text-2xl font-semibold tracking-tight">SAWAN</span>
+                    <span class="text-2xl font-semibold tracking-tight">Waltham Abbey</span>
+                    <span class="block text-xs -mt-1 tracking-widest text-[#9C7A5B]">THAI MASSAGE</span>
                 </div>
             </div>
             
             <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#gallery" class="nav-link">Gallery</a>
-                <a href="#testimonials" class="nav-link">Stories</a>
+                <a href="#about" class="nav-link">Our Story</a>
+                <a href="#services" class="nav-link">Treatments</a>
+                <a href="#gallery" class="nav-link">Sanctuary</a>
+                <a href="#testimonials" class="nav-link">Reviews</a>
             </div>
             
             <a href="#book" 
-               class="px-8 py-3.5 bg-[#8A9A7B] hover:bg-[#6F7E5F] text-white font-medium rounded-2xl transition-all text-sm tracking-wider">
-                BOOK NOW
+               class="px-8 py-3.5 bg-[#9C7A5B] hover:bg-[#8A6B4F] text-white font-medium rounded-2xl transition-all text-sm tracking-wider">
+                BOOK YOUR SESSION
             </a>
         </div>
     </nav>
@@ -86,76 +89,65 @@
     <!-- HERO -->
     <section class="hero-bg h-screen flex items-center text-white">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <p class="uppercase tracking-[3px] text-sm mb-4 text-white/90">Authentic Thai Healing</p>
-            <h1 class="text-7xl md:text-8xl font-light leading-none mb-8">
-                Restore your<br>body and mind
+            <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-5 py-2 rounded-3xl mb-6 text-sm">
+                <span class="text-[#F4E4C9]">🇹🇭</span>
+                <span>Authentic Thai Tradition in Waltham Abbey</span>
+            </div>
+            
+            <h1 class="text-6xl md:text-7xl font-light leading-none mb-8">
+                Ancient Thai healing<br>for modern lives
             </h1>
-            <p class="max-w-lg mx-auto text-xl mb-12 text-white/80">
-                Traditional Thai massage in a contemporary sanctuary. 
-                Experience deep relaxation and renewed energy.
+            <p class="max-w-lg mx-auto text-xl mb-12 text-white/90">
+                Experience the true art of Thai massage. Our therapists, trained in Thailand, 
+                combine traditional techniques with a warm, contemporary sanctuary.
             </p>
             
             <div class="flex flex-col sm:flex-row gap-5 justify-center">
                 <a href="#book" 
                    class="inline-block px-10 py-5 bg-white text-neutral-900 font-medium rounded-3xl hover:bg-neutral-100 transition-all text-lg">
-                    Reserve Your Session
+                    Reserve Your Healing
                 </a>
                 <a href="#services" 
                    class="inline-block px-10 py-5 border border-white/80 hover:bg-white/10 font-medium rounded-3xl transition-all text-lg">
-                    Explore Services
+                    Discover Treatments
                 </a>
-            </div>
-            
-            <div class="mt-16 flex justify-center gap-8 text-sm">
-                <div class="flex items-center gap-3">
-                    <i class="fa-solid fa-clock text-[#8A9A7B]"></i>
-                    <div>
-                        <div class="font-medium">Mon–Sat</div>
-                        <div class="text-white/70">10am – 8pm</div>
-                    </div>
-                </div>
-                <div class="h-8 w-px bg-white/30"></div>
-                <div>📍 Your City</div>
             </div>
         </div>
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="max-w-7xl mx-auto px-6 py-24">
+    <section id="about" class="max-w-7xl mx-auto px-6 py-24 lotus">
         <div class="grid md:grid-cols-2 gap-16 items-center">
             <div>
-                <div class="inline-block px-4 py-2 bg-[#8A9A7B]/10 text-[#8A9A7B] text-sm rounded-3xl mb-6">Our Story</div>
+                <div class="inline-block px-5 py-2 bg-[#9C7A5B]/10 text-[#9C7A5B] rounded-3xl text-sm mb-6">Our Heritage</div>
                 <h2 class="text-5xl font-light leading-tight">
-                    Ancient wisdom,<br>modern serenity
+                    From the temples of Thailand<br>to Waltham Abbey
                 </h2>
                 <div class="mt-8 space-y-6 text-lg text-neutral-600">
                     <p>
-                        At SAWAN, we blend authentic Thai massage techniques with contemporary wellness practices. 
-                        Our experienced therapists, trained in Thailand, create a personalized journey to release tension and restore balance.
+                        At Waltham Abbey Thai Massage, we bring the ancient healing wisdom of Thailand to Essex. 
+                        Our therapists are professionally trained in Chiang Mai and Bangkok, mastering the traditional 
+                        Thai massage techniques passed down through generations.
                     </p>
                     <p>
-                        Our space is intentionally designed as a peaceful sanctuary — natural materials, soft lighting, 
-                        and subtle Thai artistry come together to help you fully disconnect and rejuvenate.
+                        We use authentic methods including Sen line acupressure, gentle stretching, herbal compresses, 
+                        and flowing movements that release deep tension, improve energy flow, and restore balance to body and mind.
                     </p>
                 </div>
-                <div class="mt-10 flex items-center gap-6">
-                    <div class="text-center">
-                        <div class="text-4xl font-semibold text-[#8A9A7B]">100+</div>
-                        <div class="text-sm uppercase tracking-widest">Sessions monthly</div>
+                <div class="mt-10 flex gap-8">
+                    <div>
+                        <div class="text-4xl font-semibold text-[#9C7A5B]">100% Authentic</div>
+                        <div class="text-sm mt-1">Thai-trained therapists</div>
                     </div>
-                    <div class="text-center">
-                        <div class="text-4xl font-semibold text-[#8A9A7B]">8</div>
-                        <div class="text-sm uppercase tracking-widest">Expert therapists</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-4xl font-semibold text-[#8A9A7B]">12</div>
-                        <div class="text-sm uppercase tracking-widest">Years heritage</div>
+                    <div>
+                        <div class="text-4xl font-semibold text-[#9C7A5B]">Traditional</div>
+                        <div class="text-sm mt-1">Herbal &amp; natural products</div>
                     </div>
                 </div>
             </div>
             
             <div class="rounded-3xl overflow-hidden shadow-2xl">
-                <img src="https://picsum.photos/id/1016/800/900" alt="Sawan Interior" class="w-full h-full object-cover">
+                <img src="https://picsum.photos/id/1016/800/900" alt="Thai Massage Experience" class="w-full h-full object-cover">
             </div>
         </div>
     </section>
@@ -164,55 +156,55 @@
     <section id="services" class="bg-white py-24">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
-                <div class="text-[#8A9A7B] uppercase tracking-widest text-sm">Signature Experiences</div>
-                <h2 class="text-5xl font-light mt-3">Our Treatments</h2>
+                <div class="text-[#9C7A5B] uppercase tracking-widest text-sm">Traditional Thai Treatments</div>
+                <h2 class="text-5xl font-light mt-3">Signature Experiences</h2>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
                 <div class="service-card bg-[#F8F5F1] rounded-3xl p-8 group">
-                    <div class="h-2 w-12 bg-[#8A9A7B] rounded-full mb-8"></div>
-                    <h3 class="text-3xl font-light mb-3">Traditional Thai Massage</h3>
-                    <p class="text-neutral-600 mb-6">60 or 90 minutes of stretching, acupressure, and rhythmic compression on a floor mat. Releases deep tension and improves flexibility.</p>
-                    <div class="flex items-end justify-between">
+                    <div class="h-2 w-12 bg-[#9C7A5B] rounded-full mb-8"></div>
+                    <h3 class="text-3xl font-light mb-3">Classic Thai Massage</h3>
+                    <p class="text-neutral-600 mb-6">The traditional full-body treatment performed on a floor mat. Combines acupressure, stretching, and rhythmic compression to release tension and restore energy flow (Sen lines).</p>
+                    <div class="flex justify-between items-end">
                         <div>
-                            <span class="text-4xl font-light">$95</span><span class="text-sm text-neutral-500">/60min</span>
+                            <span class="text-4xl font-light">£85</span>
+                            <span class="block text-sm text-neutral-500">60 minutes</span>
                         </div>
-                        <button onclick="alert('Booking coming soon!')" 
-                                class="px-7 py-3 bg-white text-sm font-medium rounded-2xl group-hover:bg-[#8A9A7B] group-hover:text-white transition-all">
-                            Book
+                        <button onclick="alert('Booking link coming soon!')" 
+                                class="px-7 py-3 bg-white text-sm font-medium rounded-2xl group-hover:bg-[#9C7A5B] group-hover:text-white transition-all">
+                            Book Now
                         </button>
                     </div>
                 </div>
                 
-                <!-- Service 2 -->
                 <div class="service-card bg-[#F8F5F1] rounded-3xl p-8 group">
-                    <div class="h-2 w-12 bg-[#8A9A7B] rounded-full mb-8"></div>
-                    <h3 class="text-3xl font-light mb-3">Aromatic Oil Massage</h3>
-                    <p class="text-neutral-600 mb-6">Relaxing full-body massage with warm herbal oils chosen for your needs. Promotes circulation and deep calm.</p>
-                    <div class="flex items-end justify-between">
+                    <div class="h-2 w-12 bg-[#9C7A5B] rounded-full mb-8"></div>
+                    <h3 class="text-3xl font-light mb-3">Thai Herbal Compress</h3>
+                    <p class="text-neutral-600 mb-6">Warm herbal balls (Luk Pra Kob) filled with traditional Thai herbs are steamed and pressed onto the body to ease muscle pain, improve circulation, and detoxify.</p>
+                    <div class="flex justify-between items-end">
                         <div>
-                            <span class="text-4xl font-light">$110</span><span class="text-sm text-neutral-500">/75min</span>
+                            <span class="text-4xl font-light">£95</span>
+                            <span class="block text-sm text-neutral-500">75 minutes</span>
                         </div>
-                        <button onclick="alert('Booking coming soon!')" 
-                                class="px-7 py-3 bg-white text-sm font-medium rounded-2xl group-hover:bg-[#8A9A7B] group-hover:text-white transition-all">
-                            Book
+                        <button onclick="alert('Booking link coming soon!')" 
+                                class="px-7 py-3 bg-white text-sm font-medium rounded-2xl group-hover:bg-[#9C7A5B] group-hover:text-white transition-all">
+                            Book Now
                         </button>
                     </div>
                 </div>
                 
-                <!-- Service 3 -->
                 <div class="service-card bg-[#F8F5F1] rounded-3xl p-8 group">
-                    <div class="h-2 w-12 bg-[#8A9A7B] rounded-full mb-8"></div>
-                    <h3 class="text-3xl font-light mb-3">Signature Royal Treatment</h3>
-                    <p class="text-neutral-600 mb-6">Our most luxurious 120-minute journey combining Thai massage, herbal compresses, and head & shoulder ritual.</p>
-                    <div class="flex items-end justify-between">
+                    <div class="h-2 w-12 bg-[#9C7A5B] rounded-full mb-8"></div>
+                    <h3 class="text-3xl font-light mb-3">Royal Thai Oil Massage</h3>
+                    <p class="text-neutral-600 mb-6">Luxurious aromatherapy massage using warm Thai herbal oils. Combines traditional techniques with deep relaxation for complete rejuvenation.</p>
+                    <div class="flex justify-between items-end">
                         <div>
-                            <span class="text-4xl font-light">$195</span><span class="text-sm text-neutral-500">/120min</span>
+                            <span class="text-4xl font-light">£110</span>
+                            <span class="block text-sm text-neutral-500">90 minutes</span>
                         </div>
-                        <button onclick="alert('Booking coming soon!')" 
-                                class="px-7 py-3 bg-white text-sm font-medium rounded-2xl group-hover:bg-[#8A9A7B] group-hover:text-white transition-all">
-                            Book
+                        <button onclick="alert('Booking link coming soon!')" 
+                                class="px-7 py-3 bg-white text-sm font-medium rounded-2xl group-hover:bg-[#9C7A5B] group-hover:text-white transition-all">
+                            Book Now
                         </button>
                     </div>
                 </div>
@@ -223,15 +215,15 @@
     <!-- GALLERY -->
     <section id="gallery" class="max-w-7xl mx-auto px-6 py-24">
         <div class="text-center mb-16">
-            <div class="text-[#8A9A7B] uppercase tracking-widest text-sm">Our Sanctuary</div>
-            <h2 class="text-5xl font-light mt-3">A Space to Unwind</h2>
+            <div class="text-[#9C7A5B] uppercase tracking-widest text-sm">Our Peaceful Sanctuary</div>
+            <h2 class="text-5xl font-light mt-3">Step into Thailand in Essex</h2>
         </div>
         
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <img src="https://picsum.photos/id/1015/600/800" class="rounded-3xl aspect-[4/5] object-cover hover:scale-105 transition-transform duration-700" alt="Interior">
-            <img src="https://picsum.photos/id/133/600/800" class="rounded-3xl aspect-[4/5] object-cover hover:scale-105 transition-transform duration-700" alt="Massage">
-            <img src="https://picsum.photos/id/201/600/800" class="rounded-3xl aspect-[4/5] object-cover hover:scale-105 transition-transform duration-700" alt="Details">
-            <img src="https://picsum.photos/id/251/600/800" class="rounded-3xl aspect-[4/5] object-cover hover:scale-105 transition-transform duration-700" alt="Herbs">
+            <img src="https://picsum.photos/id/1015/600/800" class="rounded-3xl aspect-[4/5] object-cover hover:scale-105 transition-transform duration-700" alt="Thai interior">
+            <img src="https://picsum.photos/id/133/600/800" class="rounded-3xl aspect-[4/5] object-cover hover:scale-105 transition-transform duration-700" alt="Herbal compress">
+            <img src="https://picsum.photos/id/201/600/800" class="rounded-3xl aspect-[4/5] object-cover hover:scale-105 transition-transform duration-700" alt="Massage room">
+            <img src="https://picsum.photos/id/251/600/800" class="rounded-3xl aspect-[4/5] object-cover hover:scale-105 transition-transform duration-700" alt="Thai elements">
         </div>
     </section>
 
@@ -239,34 +231,34 @@
     <section id="testimonials" class="bg-white py-24">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <p class="text-3xl font-light italic leading-relaxed">
-                “The most authentic and deeply relaxing Thai massage I’ve ever experienced. I left feeling lighter, taller, and completely renewed.”
+                “The most authentic Thai massage I’ve had outside of Thailand. The herbal compress was incredible — I left feeling completely renewed and pain-free.”
             </p>
             <div class="mt-8 flex justify-center items-center gap-4">
                 <div class="w-12 h-12 bg-neutral-300 rounded-full"></div>
                 <div>
-                    <div class="font-medium">Sarah Chen</div>
-                    <div class="text-sm text-neutral-500">Regular client • 3 months</div>
+                    <div class="font-medium">Emma Thompson</div>
+                    <div class="text-sm text-neutral-500">Waltham Abbey • Regular client</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- BOOKING / CTA -->
-    <section id="book" class="bg-[#8A9A7B] text-white py-28">
+    <!-- FINAL CTA -->
+    <section id="book" class="bg-[#9C7A5B] text-white py-28">
         <div class="max-w-3xl mx-auto px-6 text-center">
-            <h2 class="text-6xl font-light">Begin your journey to wellness</h2>
-            <p class="mt-6 text-xl opacity-90">Limited appointments available each week</p>
+            <h2 class="text-6xl font-light">Ready to experience real Thai healing?</h2>
+            <p class="mt-6 text-xl opacity-90">Book your session at our peaceful studio in Waltham Abbey</p>
             
             <div class="mt-12">
                 <a href="https://calendly.com" target="_blank" 
                    class="inline-flex items-center gap-4 bg-white text-neutral-900 px-12 py-7 rounded-3xl text-xl font-medium hover:bg-neutral-100 transition-all">
-                    <span>Schedule Your Session</span>
+                    <span>Book Your Appointment</span>
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
             
             <div class="mt-10 text-sm opacity-75">
-                Or call <a href="tel:+15551234567" class="underline">(555) 123-4567</a>
+                Or call us directly: <a href="tel:01992876543" class="underline">(01992) 876 543</a>
             </div>
         </div>
     </section>
@@ -276,47 +268,46 @@
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
             <div>
                 <div class="flex items-center gap-3 mb-6">
-                    <div class="w-9 h-9 bg-[#8A9A7B] rounded-full flex items-center justify-center text-2xl">🌿</div>
-                    <span class="text-2xl font-semibold tracking-tight">SAWAN</span>
+                    <div class="w-10 h-10 bg-[#9C7A5B] rounded-2xl flex items-center justify-center text-2xl">🌿</div>
+                    <span class="text-2xl font-semibold tracking-tight">Waltham Abbey Thai Massage</span>
                 </div>
-                <p class="text-neutral-400">A contemporary Thai massage sanctuary.</p>
+                <p class="text-neutral-400 text-sm">Bringing the ancient healing traditions of Thailand to Essex.</p>
             </div>
             
             <div>
                 <div class="font-medium mb-6">Quick Links</div>
                 <div class="space-y-3 text-sm text-neutral-400">
-                    <div>Services</div>
+                    <div>Traditional Thai Massage</div>
+                    <div>Herbal Compress Therapy</div>
                     <div>Gift Vouchers</div>
-                    <div>Our Team</div>
                 </div>
             </div>
             
             <div>
-                <div class="font-medium mb-6">Visit Us</div>
+                <div class="font-medium mb-6">Visit Our Studio</div>
                 <div class="text-sm text-neutral-400">
-                    123 Wellness Street<br>
-                    Your City, ST 12345<br><br>
-                    Mon–Sat: 10am–8pm<br>
-                    Sunday: By appointment
+                    Waltham Abbey, Essex<br>
+                    (Exact address upon booking)<br><br>
+                    Tuesday – Saturday: 10am – 7pm<br>
+                    Sunday &amp; Monday: By appointment
                 </div>
             </div>
             
             <div>
-                <div class="font-medium mb-6">Connect</div>
-                <div class="flex gap-6 text-2xl">
-                    <i class="fa-brands fa-instagram hover:text-[#8A9A7B] cursor-pointer"></i>
-                    <i class="fa-brands fa-facebook hover:text-[#8A9A7B] cursor-pointer"></i>
+                <div class="font-medium mb-6">Connect With Us</div>
+                <div class="flex gap-6 text-2xl mb-8">
+                    <i class="fa-brands fa-instagram hover:text-[#9C7A5B] cursor-pointer"></i>
+                    <i class="fa-brands fa-facebook hover:text-[#9C7A5B] cursor-pointer"></i>
                 </div>
-                <div class="mt-8 text-xs text-neutral-500">
-                    © 2026 SAWAN Thai Massage<br>
-                    All rights reserved.
+                <div class="text-xs text-neutral-500">
+                    © 2026 Waltham Abbey Thai Massage<br>
+                    Authentic • Traditional • Healing
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
-        // Progress bar
         window.addEventListener('scroll', () => {
             const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -324,22 +315,16 @@
             document.getElementById("progress-bar").style.width = scrolled + "%";
         });
         
-        // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 if (this.getAttribute('href').length > 1) {
                     e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    }
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
                 }
             });
         });
-        
-        console.log('%c✅ SAWAN Thai Massage template ready! Customize images, name, and contact details.', 'color:#8A9A7B; font-family:monospace');
     </script>
 </body>
 </html>
